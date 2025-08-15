@@ -177,6 +177,49 @@
         .game-rules p:last-child {
             margin-bottom: 0;
         }
+        
+        .offense-section {
+            margin-top: 30px;
+        }
+        
+        .offense-section h2 {
+            color: #000000;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #007ACC;
+        }
+        
+        .position-list {
+            list-style: none;
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        
+        .position-list li {
+            margin-bottom: 8px;
+            position: relative;
+            font-size: 1rem;
+        }
+        
+        .position-list li::before {
+            content: "•";
+            color: #007ACC;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+        
+        .offense-rules p {
+            margin-bottom: 15px;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .offense-rules p:last-child {
+            margin-bottom: 0;
+        }
 
         @media (max-width: 768px) {
             .header h1 {
@@ -260,6 +303,28 @@
                     <p>If the offensive team crosses midfield, they have three downs to score a touchdown. The offensive team cannot run the ball within 5 yards of the 1st down line or their end zone to score.</p>
                     
                     <p>The rules of two hand touch football differ slightly from tackle when it comes to scoring: a touchdown is 6 points and a safety is 2 points (1-point conversion from the 5-yard line; 2-point conversion from the 10-yard line).</p>
+                </div>
+            </div>
+            
+            <div class="offense-section">
+                <h2>Offense</h2>
+                <p>Typically, teams set up in a formation with these 5 positions:</p>
+                <ul class="position-list">
+                    <li><strong>Quarterback</strong></li>
+                    <li><strong>Center</strong></li>
+                    <li><strong>Wide receivers, running backs, or a mix of both</strong></li>
+                </ul>
+                
+                <div class="offense-rules">
+                    <p>The center does not have to hike in between their legs. They can hike the ball facing the quarterback on 1 knee. After hiking the ball to the quarterback, the center is considered a receiver and eligible for a pass past the line of scrimmage.</p>
+                    
+                    <p>The quarterback cannot scramble (run past the line of scrimmage) after the hike.</p>
+                    
+                    <p>There are no motions allowed.</p>
+                    
+                    <p>Blocking is not allowed in the sense of using your hands to block a player, however you can run and block a defender's path with your body without contact, except for a player rushing the quarterback. They cannot be blocked in any way.</p>
+                    
+                    <p>For example offensive formations in 5 on 5, visit the NFLFlag website here: <a href="https://nflflag.com/coaches/flag-football-rules/5-on-5-flag-football-playbook" target="_blank" style="color: #007ACC; text-decoration: none; border-bottom: 1px solid #007ACC;">https://nflflag.com/coaches/flag-football-rules/5-on-5-flag-football-playbook</a></p>
                 </div>
             </div>
         </div>
