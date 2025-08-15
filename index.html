@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josephine, Texas Two-Hand Touch Football Rules</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2d5016 0%, #3d6b1f 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"><defs><pattern id="football" patternUnits="userSpaceOnUse" width="20" height="20"><circle cx="10" cy="10" r="2" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="20" fill="url(%23football)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .intro {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid #2d5016;
+        }
+
+        .intro p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .intro p:last-child {
+            margin-bottom: 0;
+        }
+
+        .rules-section {
+            margin-bottom: 30px;
+        }
+
+        .rules-section h2 {
+            color: #2d5016;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .rules-list {
+            list-style: none;
+            counter-reset: rule-counter;
+        }
+
+        .rules-list li {
+            counter-increment: rule-counter;
+            margin-bottom: 15px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #2d5016;
+            position: relative;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .rules-list li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .rules-list li::before {
+            content: counter(rule-counter);
+            position: absolute;
+            left: -15px;
+            top: 15px;
+            background: #2d5016;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .footer {
+            background: #2d5016;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .header p {
+                font-size: 1rem;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .intro, .rules-list li {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Josephine, Texas</h1>
+            <p>Two-Hand Touch Football Rules</p>
+        </div>
+        
+        <div class="content">
+            <div class="intro">
+                <p>The first rule of flag football is pretty straight forward: there's no contact allowed. That includes tackling, diving, blocking, and screening. Instead, players wear flags that hang along their sides by a belt. To "tackle" the person in possession of the ball, the opposing team needs to pull one or both of their flags off.</p>
+                
+                <p>While flag football rules are designed to keep players safe, you'll find that they also create an engaging, fast-paced version of football without the physical contact.</p>
+            </div>
+            
+            <div class="rules-section">
+                <h2>Official Game Rules</h2>
+                <ul class="rules-list">
+                    <li>All passes must be forward and received beyond the line of scrimmage.</li>
+                    
+                    <li>Direct handoffs as well as unlimited backward pitches and passes are allowed behind the line of scrimmage. No backwards passes or direct handoffs are allowed past the line of scrimmage.</li>
+                    
+                    <li>The quarterback has 7 seconds, from receiving the snap, to release the ball. Once a backwards handoff, pass or lateral occurs, the 7 second rule goes away and the offense has an unlimited amount of time to throw a forward pass.</li>
+                    
+                    <li>The player receiving the snap (QB) cannot run across the line of scrimmage with the ball. The QB can hand off or pitch/throw the ball backwards to a teammate and then catch a forward pass across the line of scrimmage.</li>
+                    
+                    <li>Offensive players must steer clear of the rusher and may not get in his/her way.</li>
+                    
+                    <li>A maximum of 2 designated defensive rushers may legally rush the quarterback. All designated rushers must identify themselves, with their hand raised until the snap, to legally rush from the 7 yard rush line. Designated rushers are not obligated to rush, but if they do, they must rush immediately upon the ball being snapped.</li>
+                    
+                    <li>Once the ball is handed off, pitched or thrown backwards by the offense, all defenders are eligible to rush across the line of scrimmage.</li>
+                    
+                    <li>Interceptions are returnable for 6 pts. during a scrimmage down or for 2 pts on any extra point attempt. A backwards pass intercepted in the air, behind the line of scrimmage, can also be advanced by the defense for a score.</li>
+                    
+                    <li>The ball is dead when it hits the ground, the offensive player's flag is pulled from their belt, the ball-carrier steps out of bounds, or the ball-carrier's body—outside of their hands or feet—touches the ground.</li>
+                    
+                    <li>All offensive flag football penalties result in a loss of down and yardage.</li>
+                    
+                    <li>All defensive flag football penalties result in an automatic first down and some are associated with yardage.</li>
+                </ul>
+            </div>
+            
+            <div class="highlight-box">
+                NFL FLAG football is a non-contact sport. There's no tackling, diving, blocking, screening or fumbles.
+            </div>
+        </div>
+        
+        <div class="footer">
+            For a complete list of flag football rules, download the NFL FLAG Football Rule Book.
+        </div>
+    </div>
+</body>
+</html>
